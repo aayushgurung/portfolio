@@ -1,0 +1,85 @@
+:root{
+    /* CSS HEX */
+--oxford-blue: #0a1128ff;
+--penn-blue: #001f54ff;
+--indigo-dye: #034078ff;
+--cerulean: #1282a2ff;
+--white: #fefcfbff;
+
+/* CSS HSL
+--oxford-blue: hsla(226, 60%, 10%, 1);
+--penn-blue: hsla(218, 100%, 16%, 1);
+--indigo-dye: hsla(209, 95%, 24%, 1);
+--cerulean: hsla(193, 80%, 35%, 1);
+--white: hsla(20, 60%, 99%, 1); */
+}
+body{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: larger;
+    background-color: var(--white);
+    padding-top:76px;
+}
+
+.nav-custom .navbar-brand{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.navbar{
+    padding:-4px 0;
+}
+.navbar.scrolled {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: 0.3s ease-in-out all;
+    background-color: var(--white);
+  }
+  
+#first-hero{
+    background-image: url(../images/hero-1.svg),url(../images/hero-2.svg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.introduction .intro-1 {
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom:-0.7em;
+}
+.introduction .intro-2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 2px;
+    color:rgb(138, 138, 138);
+    margin-top: 1.7em;
+    margin-bottom: 0.7em;
+}
+.button{
+    border:none;
+    border-radius: 0%;
+    color:black;
+    padding:9px 20px;
+    background-color: var(--cerulean);
+}
+.button a{
+    text-decoration: none;
+    color:var(--white);
+    
+}
+
+#second-hero{
+    background-color: rgb(32,32,32);
+    padding:100px 0;
+    text-align: center;
+}
+
+.about{
+    color:var(--white);
+}
+.about .about-me{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
