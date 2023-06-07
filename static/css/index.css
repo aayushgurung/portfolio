@@ -2,7 +2,7 @@
     /* CSS HEX */
 --oxford-blue: #0a1128ff;
 --penn-blue: #001f54ff;
---indigo-dye: #034078ff;
+--indigo-dye: hwb(209 1% 53%);
 --cerulean: #1282a2ff;
 --white: #fefcfbff;
 --beige:#f3e6c1;
@@ -86,9 +86,28 @@ body{
     font-weight: 700;
     text-align: center;
 }
+#projects-container a{
+    background-color: var(--cerulean);
+    max-width: max-content;
+    color:white;
+    text-decoration: none;
+    padding:5px 10px;
+    margin-top:10px;
+    text-align: center;
+}
+#projects-container .col{
+    margin:15px 0;
+}
+.project-header{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+
+}
 
 #third-hero{
-    padding:100px 0;
+    padding:50px 0;
+    
 }
 #skills button{
     width: max-content;
@@ -106,4 +125,72 @@ body{
 }
 .social-media .social-links{
     margin:10px 0;
+}
+#about {
+    padding-top: 100px; /* Adjust this value based on your fixed navbar height */
+    margin-top: -100px; /* Negative value equal to the padding-top value */
+  }
+#project{
+    padding-top: 100px; /* Adjust this value based on your fixed navbar height */
+    margin-top: -100px;
+}
+#email{
+    padding-top: 100px; /* Adjust this value based on your fixed navbar height */
+    margin-top: -100px;
+}
+#fourth-hero{
+    background-color: rgb(32,32,32);
+    padding: 50px 0 70px 0;
+    text-align: center;
+
+}
+
+#email-container .heading{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color:white;
+}
+#email-container form input,#email-container form textarea {
+    border:none;
+    width:100%;
+    padding:10px 20px;
+    margin:10px 0;
+}
+/* #email-container .message{
+    font-size: large;
+    font-weight: 400;
+    color:white;
+} */
+ #email-container .message{
+    font-size: large;
+    font-weight: 400;
+    color:white;
+    width:max-content;
+    margin:auto;
+    background: linear-gradient(to right, var(--cerulean),rgba(3, 64, 120,0.3));
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#email-container form #button{
+    padding:10px 100px 14px 100px;
+    width:max-content;
+    color:white;
+    /* background-color: rgb(32,32,32); */
+    background-color: #c3890d;
+    font-weight: 600;
+    border:none;
+    position:relative;
+
 }

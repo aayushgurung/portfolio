@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
@@ -48,10 +49,15 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item px-5">
-                <a class="nav-link active" href="#about">About</a>
+                <a class="nav-link active" href="#about" id="about-link"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Projects</a>
+                <a class="nav-link active" href="#project">Projects</a>
+              </li>
+              <li class="nav-item ps-5">
+                <a class="nav-link active" href="#email">Contact</a>
               </li>
             </ul>
             <ul class="navbar-nav">
@@ -79,100 +85,215 @@
         </div>
       </div>
     </div> -->
-      <div id="first-hero">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-md-8 d-flex align-item-center">
-              <div class="introduction">
-                <div class="intro-1">Hi</div>
-                <div class="intro-1">
-                  I am <span style="color: #1282a2ff"> Aayush Gurung</span>
-                </div>
-                <div class="intro-2">
-                  Specialize in Backend web technologies and responsive
-                  webdesign.
-                </div>
-                <div>
-                  <button class="button">
-                    <a href="#" class="">Download CV</a>
-                  </button>
+      <div id="content">
+        <div id="first-hero">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-md-8 d-flex align-item-center">
+                <div class="introduction animate-introduction">
+                  <div class="intro-1">Hi</div>
+                  <div class="intro-1">
+                    I am <span style="color: #1282a2ff"> Aayush Gurung</span>
+                  </div>
+                  <div class="intro-2">
+                    Specialize in Backend web technologies and responsive
+                    webdesign.
+                  </div>
+                  <div>
+                    <button class="button">
+                      <a href="D:\Projects\portfolio\TEST CV.pdf" class="" download>
+                        Download CV</a>
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 d-flex justify-content-center">Photo</div>
-          </div>
-        </div>
-        <div class="social-media">
-          <div class="social-links"><i class="fa-brands fa-facebook" style="color: #0a1128ff;"></i></div>
-          <div class="social-links"><i class="fa-brands fa-instagram" style="color: #0a1128ff;"></i></div>
-          <div class="social-links"><i class="fa-brands fa-linkedin" style="color: #0a1128ff;"></i></div>
-        </div>
-      </div>
-      <div id="second-hero">
-        <div class="container">
-          <div class="row">
-            <div class="about" id="about">
-              <div class="about-me">About me</div>
-              <div class="about-paragraph">
-                <div>Hello! My name is Aayush, I am a Backend Developer.</div>
-                <div>I hope you enjoy my work.</div>
-                <div>
-                  I graduated from Trinity International College ( TU afiiliated
-                  ).
-                </div>
-                <div></div>
-                I improved my backend developer skills during my college years
-                by doing the projects mentioned in the portfolio.
-              </div>
+              <div class="col-md-4 d-flex justify-content-center">Photo</div>
             </div>
           </div>
-          <div class="row mt-5 text-white">
-            <div class="col-md-6 mx-auto">
-              <div class="row" style="font-size: 40px">Skills</div>
-              <div class="row" id="skills">
-                <button>Django</button>
-                <button>Postgresql</button>
-                <button>Html</button>
-                <button>Css</button>
-                <button>Javascript</button>
-                <button>Photoshop</button>
-                <button>Illustrator</button>
-              </div>
+          <div class="social-media">
+            <div class="social-links">
+              <i class="fa-brands fa-facebook" style="color: #0a1128ff"></i>
             </div>
-            <div class="col-md-6">
-              <div class="row" style="font-size: 40px">Education</div>
-              <div class="row" id="skills">
-                <button>
-                  - B.Sc. Computer Science and Information Technology - Trinity
-                  International College
-                </button>
-              </div>
+            <div class="social-links">
+              <i class="fa-brands fa-instagram" style="color: #0a1128ff"></i>
+            </div>
+            <div class="social-links">
+              <i class="fa-brands fa-linkedin" style="color: #0a1128ff"></i>
             </div>
           </div>
         </div>
-      </div>
+        <div id="second-hero">
+          <div class="container">
+            <div class="row">
+              <div class="about" id="about">
+                <div class="about-me">About me</div>
+                <div class="about-paragraph">
+                  <div>Hello! My name is Aayush, I am a Backend Developer.</div>
+                  <div>I hope you enjoy my work.</div>
+                  <div>
+                    I graduated from Trinity International College ( TU
+                    afiiliated ).
+                  </div>
+                  <div></div>
+                  I improved my backend developer skills during my college years
+                  by doing the projects mentioned in the portfolio.
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5 text-white">
+              <div class="col-md-6 mx-auto">
+                <div class="row" style="font-size: 40px">Skills</div>
+                <div class="row" id="skills">
+                  <div class="animate-skills">
+                    <button>Django</button>
+                    <button>Postgresql</button>
+                    <button>Html</button>
+                    <button>Css</button>
+                    <button>Javascript</button>
+                    <button>Photoshop</button>
+                    <button>Illustrator</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row" style="font-size: 40px">Education</div>
+                <div class="row" id="skills">
+                  <div class="animate-education">
+                    <button>
+                      - B.Sc. Computer Science and Information Technology -
+                      Trinity International College
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div id="third-hero">
-        <div class="container">
-          <div class="row text-center">
-            <h3>Projects</h3>
+        <div id="third-hero">
+          <div class="container" id="projects-container">
+            <div class="row text-center">
+              <div class="col">
+                <div class="project-header mb-3" id="project">Projects</div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Add 'justify-content-center' class for horizontal center alignment -->
+              <div class="col text-center">
+                <!-- Add 'text-center' class for center alignment -->
+                <div class="row fw-bold justify-content-center">
+                  Restaurant Booking System
+                </div>
+                <div class="row justify-content-center">
+                  <a href="">Github Link to Project</a>
+                </div>
+              </div>
+              <div class="col text-center">
+                <!-- Add 'text-center' class for center alignment -->
+                <div class="row fw-bold justify-content-center">
+                  Ecommerce Website Using Django
+                </div>
+                <div class="row justify-content-center">
+                  <a href="">Github Link to Project</a>
+                </div>
+              </div>
+              <div class="col text-center">
+                <!-- Add 'text-center' class for center alignment -->
+                <div class="row fw-bold justify-content-center">
+                  Akaui Multiways
+                </div>
+                <div class="row justify-content-center">
+                  <a href="http://akaruimultiways.com.np/">Go to Site</a>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <!-- Add 'justify-content-center' class for horizontal center alignment -->
+              <div class="col text-center">
+                <!-- Add 'text-center' class for center alignment -->
+                <div class="row fw-bold justify-content-center">
+                  Weather App using OpenWeather API
+                </div>
+                <div class="row justify-content-center">
+                  <a href="../weather_app/weather.html">Open App</a>
+                </div>
+              </div>
+              <div class="col text-center">
+                <!-- Add 'text-center' class for center alignment -->
+                <div class="row fw-bold justify-content-center">
+                  Quiz App using Trivia Opendb API
+                </div>
+                <div class="row justify-content-center">
+                  <a href="../Quizz_app/quiz.html">Open App</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="fourth-hero">
+          <div class="container" id="email-container">
+            <div class="row" id="email">
+              <div class="heading" >Contact Me</div>
+            </div>
+            <div class="row">
+              <div class="message"></div>
+              <form id="form">
+                <div class="field">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter Your Name"
+                  />
+                </div>
+                <div class="field">
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Enter Your Email"
+                  />
+                </div>
+                <div class="field">
+                  <!-- <input type="textarea" name="message" id="message" placeholder="Enter Your Message"> -->
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="5"
+                    placeholder="Enter Your Message"
+                  ></textarea>
+                </div>
+
+                <input type="submit" id="button" value="Send Email" />
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <hr>
+    <hr />
     <footer>
       <div class="container">
         <div class="row"></div>
-        <div class="row" style="font-size: 40px;">gurung087@gmail.com</div>
+        <div class="row" style="font-size: 40px">gurung087@gmail.com</div>
         <div class="row">
           <div class="col text-center">©2023. All Right Reserved</div>
         </div>
       </div>
     </footer>
     <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("T1XJrovbDKKGeI2ew");
+      })();
+    </script>
+    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
-      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHt+XGSABKvjN0H6Aoow=="
+      integrity=""
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
@@ -180,6 +301,18 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity=""
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      integrity=""
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity=""
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script src="./static/js/index.js"></script>
   </body>
