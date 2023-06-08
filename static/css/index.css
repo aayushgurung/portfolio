@@ -8,6 +8,8 @@
 --beige:#f3e6c1;
 --yellow:#c3890d;
 --burgandy:#2e273a;
+--facebook-blue: #4267B2;
+--linkedin-blue: #0072b1;
 
 /* CSS HSL
 --oxford-blue: hsla(226, 60%, 10%, 1);
@@ -16,6 +18,7 @@
 --cerulean: hsla(193, 80%, 35%, 1);
 --white: hsla(20, 60%, 99%, 1); */
 }
+
 body{
     font-family: 'Darker Grotesque', sans-serif;
     font-size: larger;
@@ -39,10 +42,11 @@ body{
   }
   
 #first-hero{
-    background-image: url(../images/hero-1.svg),url(../images/hero-2.svg);
+    background-image: url(../images/hero-1.svg);
 
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -2;
    
 }
 .introduction .intro-1 {
@@ -125,6 +129,20 @@ body{
 }
 .social-media .social-links{
     margin:10px 0;
+    z-index: 2;
+}
+.social-links svg:hover{
+    transform:scale(1.2);
+    transition: ease 0.4s all;
+}
+.social-links #fa-facebook:hover{
+    color:var(--facebook-blue)!important;
+}
+.social-links .fa-instagram:hover{
+    color: #E1306C!important; 
+}
+.social-links .fa-linkedin:hover{
+    color:var(--linkedin-blue)!important;
 }
 #about {
     padding-top: 100px; /* Adjust this value based on your fixed navbar height */
@@ -193,4 +211,13 @@ body{
     border:none;
     position:relative;
 
+}
+
+.main-image img{
+    width:auto;
+    height:500px;
+    position: absolute;
+    top: 25px;
+    right: 90px;
+    z-index: -1;
 }

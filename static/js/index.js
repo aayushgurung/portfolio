@@ -26,7 +26,7 @@ gsap.from('.animate-skills, .animate-education', {
   scrollTrigger: {
     trigger: '.animate-skills',
     start: 'top center+=25%',
-    toggleActions: 'restart pause pause none',
+    toggleActions: 'play pause pause none',
   },
 });
 const btn = document.getElementById('button');
